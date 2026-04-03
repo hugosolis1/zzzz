@@ -801,7 +801,7 @@ class AstroApp(ui.View):
         self.utc_field.background_color = '#1a1a3e'
         self.utc_field.text_color = '#f0c040'
         self.utc_field.corner_radius = 6
-        self.utc_field.keyboard_type = ui.KEYBOARD_NUMBERS_AND_PUNCTUATION
+        self.utc_field.keyboard_type = ui.KEYBOARD_NUMBER_PAD
         view.add_subview(self.utc_field)
         
         y += 40
@@ -817,7 +817,7 @@ class AstroApp(ui.View):
         self.lat_field.background_color = '#1a1a3e'
         self.lat_field.text_color = '#f0c040'
         self.lat_field.corner_radius = 6
-        self.lat_field.keyboard_type = ui.KEYBOARD_NUMBERS_AND_PUNCTUATION
+        self.lat_field.corner_radius = 6
         view.add_subview(self.lat_field)
         
         y += 40
@@ -833,7 +833,6 @@ class AstroApp(ui.View):
         self.lon_field.background_color = '#1a1a3e'
         self.lon_field.text_color = '#f0c040'
         self.lon_field.corner_radius = 6
-        self.lon_field.keyboard_type = ui.KEYBOARD_NUMBERS_AND_PUNCTUATION
         view.add_subview(self.lon_field)
         
         y += 50
