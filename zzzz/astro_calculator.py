@@ -640,13 +640,13 @@ class AstroApp(ui.View):
         lbl.font = ('Helvetica', 13)
         view.add_subview(lbl)
         
-        self.search_degree = ui.TextField(frame=(90, y, 60, 30))
-        self.search_degree.text = "15"
-        self.search_degree.background_color = '#1a1a3e'
-        self.search_degree.text_color = '#f0c040'
-        self.search_degree.corner_radius = 6
-        self.search_degree.keyboard_type = ui.KEYBOARD_NUMBER_PAD
-        view.add_subview(self.search_degree)
+        self.search_deg_field = ui.TextField(frame=(90, y, 60, 30))
+        self.search_deg_field.text = "15"
+        self.search_deg_field.background_color = '#1a1a3e'
+        self.search_deg_field.text_color = '#f0c040'
+        self.search_deg_field.corner_radius = 6
+        self.search_deg_field.keyboard_type = ui.KEYBOARD_NUMBER_PAD
+        view.add_subview(self.search_deg_field)
         
         y += 40
         # Signo
@@ -1049,7 +1049,7 @@ astronomicas (tropical)."""
     def search_degree(self, sender):
         try:
             planet = self.search_planet.text.strip()
-            degree = float(self.search_degree.text)
+            degree = float(self.search_deg_field.text)
             sign = self.search_sign.text.strip()
             start = self.search_start.date
             end = self.search_end.date
